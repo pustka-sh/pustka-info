@@ -1,0 +1,48 @@
+/* pustka / Redline theme
+   Drop this into any site or app to pick up the brand colors, font and effects. */
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&display=swap");
+
+:root {
+  /* Colors */
+  --pustka-void:    #080404;
+  --pustka-bone:    #F4E9E4;
+  --pustka-redline: #FF2A2A;
+  --pustka-ember:   #A8161A;
+  --pustka-alert:   #FFB000;
+
+  /* Roles */
+  --pustka-bg:      var(--pustka-void);
+  --pustka-text:    var(--pustka-bone);
+  --pustka-accent:  var(--pustka-redline);
+  --pustka-border:  var(--pustka-ember);
+  --pustka-signal:  var(--pustka-alert);
+
+  /* Type */
+  --pustka-font: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --pustka-weight-display: 800;
+  --pustka-weight-body: 400;
+}
+
+/* Neon glow: inherits the element's own color */
+.pustka-glow {
+  text-shadow: 0 0 22px currentColor;
+}
+
+/* CRT scanlines: put on a positioned container */
+.pustka-scanlines {
+  position: relative;
+}
+.pustka-scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45) 0px,
+    rgba(0, 0, 0, 0.45) 2px,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0) 6px
+  );
+}

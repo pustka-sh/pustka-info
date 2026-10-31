@@ -1,0 +1,30 @@
+{
+  "name": "pustka / Redline",
+  "colors": {
+    "void":    { "hex": "#080404", "rgb": [8, 4, 4],       "role": "Background. Every surface starts here." },
+    "bone":    { "hex": "#F4E9E4", "rgb": [244, 233, 228], "role": "Primary light. Text and the top ring segment." },
+    "redline": { "hex": "#FF2A2A", "rgb": [255, 42, 42],   "role": "Primary accent. Links, highlights, the right ring segment." },
+    "ember":   { "hex": "#A8161A", "rgb": [168, 22, 26],   "role": "Deep red. Borders, shadows, the bottom ring segment. Decorative only." },
+    "alert":   { "hex": "#FFB000", "rgb": [255, 176, 0],   "role": "Signal. Warnings, calls to action, the slash. Use sparingly." }
+  },
+  "effects": {
+    "glow": {
+      "description": "Gaussian blur of the shape merged under the original.",
+      "svgStdDeviation": 7,
+      "atSize": 512,
+      "cssTextShadow": "0 0 22px currentColor"
+    },
+    "scanlines": {
+      "description": "2px black lines at 45% opacity, repeating every 6px.",
+      "lineHeight": 2,
+      "period": 6,
+      "opacity": 0.45
+    }
+  },
+  "typography": {
+    "family": "JetBrains Mono",
+    "fallback": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+    "weights": { "display": 800, "body": 400 },
+    "license": "SIL Open Font License 1.1"
+  }
+}
