@@ -23,7 +23,7 @@ This repo is the single source of truth for the pustka identity: name, logo, col
 | **Meaning** | Polish for "emptiness" or "the void" |
 | **Pronunciation** | POOST-kah |
 | **Domain** | `pustka.sh` |
-| **GitHub** | `pustka-projects` |
+| **GitHub** | `pustka-sh` |
 | **Project subdomains** | `<project>.pustka.sh` |
 
 ## Logo
